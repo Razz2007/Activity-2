@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+      <div class="container">
+        <h1>🔄 Algoritmo de Ordenamiento Burbuja</h1>
+        
+        <div class="controls">
+            <button onclick="generateArray()">🎲 Generar Array</button>
+            <button onclick="startSort()" id="sortBtn">▶️ Iniciar Ordenamiento</button>
+            <button onclick="resetArray()">🔄 Reiniciar</button>
+            <button onclick="toggleSpeed()" id="speedBtn">⚡ Velocidad: Normal</button>
+        </div>
+
+        <div class="array-container" id="arrayContainer">
+        </div>
+
+        <div class="info-panel">
+            <h3>📊 Estadísticas del Algoritmo</h3>
+            <div class="stats">
+                <div class="stat-item">
+                    <strong>Comparaciones:</strong> <span id="comparisons">0</span>
+                </div>
+                <div class="stat-item">
+                    <strong>Intercambios:</strong> <span id="swaps">0</span>
+                </div>
+                <div class="stat-item">
+                    <strong>Tiempo transcurrido:</strong> <span id="time">0s</span>
+                </div>
+                <div class="stat-item">
+                    <strong>Estado:</strong> <span id="status">Listo</span>
+                </div>
+            </div>
+
+            <div class="code-explanation">
+                <strong>🧠 Cómo funciona Bubble Sort:</strong><br>
+                <div id="explanation">
+                    1. Compara elementos adyacentes<br>
+                    2. Si están en orden incorrecto, los intercambia<br>
+                    3. Repite hasta que no haya más intercambios<br>
+                    4. Los elementos más grandes "burbujean" hacia el final
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/function.js"></script>
+</html>
